@@ -28,7 +28,7 @@ function setup(){
     if(frameCount % 150 === 0){
 
         for(var i=0; i<maxDrops; i++){
-            drops.push(new createDrop(random(0,400), random(0,400)));
+            drops.push(new Drops(random(0,400), random(0,400)));
         }
 
     }
@@ -65,7 +65,7 @@ function draw(){
 
     for(var i = 0; i<maxDrops; i++){
         drops[i].showDrop();
-        drops[i].updateY()
+        drops[i].updateDrops()
         
     }
 
